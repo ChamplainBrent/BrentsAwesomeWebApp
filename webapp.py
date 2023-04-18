@@ -12,7 +12,7 @@ with col1:
   #Chart 1 histogram of Age
   Hist_Age = alt.Chart(data).mark_bar().encode(
       alt.X("Age:Q", bin=True),
-      y='count'
+      y='count()'
   )
   st.altair_chart(Hist_Age)
 
@@ -30,6 +30,6 @@ with col3:
   #Chart 3 histogram of Fare
   Hist_Fare = alt.Chart(data).mark_bar().encode(
       alt.X("Fare:Q", bin=True),
-      y='count'
+      y='count()'
   )
   st.altair_chart(Hist_Fare)
