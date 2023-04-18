@@ -4,7 +4,7 @@ import streamlit as st
 
 data = pd.read_csv('https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv')
 
-st.set_page_config(page_title="Brent's Awesome Web App", layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="Brent's Awesome Web App", layout="wide", initial_sidebar_state="auto")
 
 col1, col2, col3 = st.columns(3)
 
