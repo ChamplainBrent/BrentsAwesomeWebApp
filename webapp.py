@@ -8,7 +8,7 @@ st.set_page_config(page_title="Brent's Awesome Web App", layout="wide", initial_
 
 add_selectbox = st.sidebar.selectbox(
     "How awesome is Brent's app?",
-    ("meh", "awesome!", "awesome-est!")
+    ("awesome-est!", "awesome!", "meh")
 )
 
 with st.sidebar:
