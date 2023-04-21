@@ -6,6 +6,18 @@ data = pd.read_csv('https://raw.githubusercontent.com/datasciencedojo/datasets/m
 
 st.set_page_config(page_title="Brent's Awesome Web App", layout="wide", initial_sidebar_state="auto")
 
+add_selectbox = st.sidebar.selectbox(
+    "How awesome is Brent's app?",
+    ("meh", "awesome!", "awesome-est!")
+)
+
+with st.sidebar:
+    add_radio = st.radio(
+        "Choose a qualifier",
+        ("not at all", "the mostest")
+    )
+
+
 col1, col2, col3 = st.columns(3)
 
 with col1:
